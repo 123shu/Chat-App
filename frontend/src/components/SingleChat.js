@@ -19,7 +19,7 @@ import { ChatState } from "../Context/ChatProvider";
 
 import "./styles.css";
 
-const ENDPOINT = "https://talk-ative.herokuapp.com/";
+const ENDPOINT = "https://shubhammehar-chat-app.herokuapp.com/";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -74,7 +74,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     }
   };
 
-  
+
   useEffect(() => {
     socket = io(ENDPOINT);
     socket.emit("setup", user);
@@ -88,10 +88,10 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
     fetchMessages();
 
     selectedChatCompare = selectedChat;
-    
+
   }, [selectedChat]);
 
-  
+
   useEffect(() => {
     socket.on("message recieved", (newMessageRecieved) => {
       if (
