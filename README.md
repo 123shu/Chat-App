@@ -1,12 +1,15 @@
-#Talk-A-Tive
-Talk-a-tive is a Full Stack Chatting App. Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
+# Talk-A-Tive
 
-Tech Stack
-Client: React JS
+Talk-a-tive is a Full Stack Chatting App.
+Uses Socket.io for real time communication and stores user details in encrypted format in Mongo DB Database.
+## Tech Stack
 
-Server: Node JS, Express JS
+**Client:** React JS
 
-Database: Mongo DB
+**Server:** Node JS, Express JS
 
-Demo
+**Database:** Mongo DB
+
+## Demo
+
 https://shubhammehar-chat-app.herokuapp.com/
